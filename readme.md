@@ -5,3 +5,4 @@
 > If you want to use it, you need to create a buttons varible inside your whatsapp web localstorage
 
 ![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/preview.jpeg)
+![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/preview_white.png)

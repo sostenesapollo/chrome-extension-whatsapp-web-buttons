@@ -1,6 +1,6 @@
 
 # 🎬 Preview buttons in action
-![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/demo.gif)
+![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/public/demo.gif)
 ## Chrome extension - Whatsapp Web Buttons [In development]
 - [x] Custom Buttons in whatsapp bottom 
 - [ ] Modal to edit [in development]

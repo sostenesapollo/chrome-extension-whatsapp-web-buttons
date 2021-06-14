@@ -2,7 +2,7 @@
 - [x] Custom Buttons in whatsapp bottom 
 - [ ] Modal to edit [in development]
 
-# How to use
+# 🤔 How to use ?
 1. Download the repo
 2. Install the extension inside your chrome extensions folder
 3. Create a localstorage variable with the buttons configs bellow:
@@ -12,7 +12,6 @@
 4. Start whatsapp web and click in some chat
 > ⚠️ If you want to use it, you need to create a buttons varible inside your whatsapp web localstorage
 
-# Preview of the buttons
+# 🎬 Preview buttons in action
 
-![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/preview.jpeg)
-![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/preview_white.png)
+![Preview](https://github.com/sostenesapollo/chrome-extension-whatsapp-web-buttons/blob/master/demo.gif)

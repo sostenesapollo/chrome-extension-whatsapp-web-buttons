@@ -169,8 +169,10 @@ function sendMessage(text) {
 
         input.innerHTML = text;
         input.dispatchEvent(new Event('input', {bubbles: true}));
-
-        getElementByXpath(`//*[@id="main"]/footer/div[1]/div[2]/div/div[2]/button`).click();
+        setTimeout(()=>{
+            getElementByXpath(`//*[@id="main"]/footer/div[1]/div[2]/div/div[2]/button`).click();
+        }, 100)
+        
     }catch(e) {
         console.warn('sendMessage Error', e.message)
     }

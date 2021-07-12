@@ -165,12 +165,12 @@ function sendMessage(text) {
     try {
         const getElementByXpath = (path) => { return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;}
 
-        const input = getElementByXpath("//*[@id=\"main\"]/footer/div[1]/div[2]/div/div[2]");
+        const input = getElementByXpath(`//*[@id="main"]/footer/div[1]/div[2]/div/div[1]/div/div[2]`);
 
         input.innerHTML = text;
         input.dispatchEvent(new Event('input', {bubbles: true}));
 
-        getElementByXpath("//*[@id=\"main\"]/footer/div[1]/div[3]/button").click();
+        getElementByXpath(`//*[@id="main"]/footer/div[1]/div[2]/div/div[2]/button`).click();
     }catch(e) {
         console.warn('sendMessage Error', e.message)
     }
@@ -202,7 +202,7 @@ window.generateButtonsBar = () => {
         contentElement.innerHTML = `<div id="buttonsPanel" style="margin-left:10px">${content}${addBtn}</div>`
 
         if(document.getElementsByTagName('suggar').length === 0) {
-            document.getElementsByClassName('_3uxr9')[0].appendChild(contentElement)
+            document.querySelector("#main > footer").appendChild(contentElement)
         } else {
             document.getElementById('buttonsPanel').innerHTML = `${content}${addBtn}`
         }
@@ -234,7 +234,7 @@ window.closeModal = () => {
 
 const interval = setInterval(()=>{
         try {
-            const lateralBarElement = document.body.getElementsByClassName('_1Flk2 _2DPZK _1pQBW')[0]
+            const lateralBarElement = document.body.getElementsByClassName('_3Bc7H _20c87')[0]
             lateralBarElement.onclick = () => { window.generateButtonsBar() }
             console.warn('Set onclick event ok')
             clearInterval(interval)

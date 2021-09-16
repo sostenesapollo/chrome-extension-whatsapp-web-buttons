@@ -165,12 +165,12 @@ function sendMessage(text) {
     try {
         const getElementByXpath = (path) => { return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;}
 
-        const input = getElementByXpath(`//*[@id="main"]/footer/div[1]/div[2]/div/div[1]/div/div[2]`);
+        const input = getElementByXpath(`/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/div/div[2]/div[1]/div/div[2]`);
 
         input.innerHTML = text;
         input.dispatchEvent(new Event('input', {bubbles: true}));
         setTimeout(()=>{
-            getElementByXpath(`//*[@id="main"]/footer/div[1]/div[2]/div/div[2]/button`).click();
+            getElementByXpath(`/html/body/div[1]/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div/div/div[2]/div[2]/button`).click();
         }, 100)
         
     }catch(e) {
